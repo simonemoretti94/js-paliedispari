@@ -29,3 +29,11 @@ palindrome(chosenWord);
 
 
 //Even && Odd
+
+const evenOrOdd = prompt("plese write below lowercase 'even' or 'odd'");
+
+const inputNumber = Number('Then, please write below a number 1 <= n <= 5');
+
+const machineRandNumber = function getRandomInteger(min, max) {
+    console.log(max - min + 1);
+}
