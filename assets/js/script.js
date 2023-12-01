@@ -12,6 +12,7 @@ function palindrome (word) {
                 console.log('word index: ',i, ' ',word[i], 'is the same as word index: ', n, ' ', word[n]);
             }
             else {
+                alert('The number you wrote isn\'t palindrome!');
                 break;
             }
         } 
@@ -30,16 +31,6 @@ palindrome(chosenWord);
 
 //Even && Odd
 
-const machineNumber  = function machineRandNumber(min, max) {
-    console.log((max - min) + 1);
-
-    console.log(Math.random());
-
-    console.log(Math.random() * ((max - min) + 1));
-
-    return Math.floor(Math.random() * ((max - min) + 1));
-
-}
 
 function winner (input1, input2) {
     const sum = input1 + input2;
@@ -65,5 +56,17 @@ const evenOrOdd = prompt("plese write below lowercase 'even' or 'odd'");
 
 const inputNumber = Number(prompt('Then, please write below a number 1 <= n <= 5'));
 
+const machineNumber  = function machineRandNumber(min, max) {
+    // console.log((max - min) + 1);
 
-console.log('machine rand: ', machineRandNumber(1, 5));
+    // console.log(Math.random());
+
+    // console.log(Math.random() * ((max - min) + 1));
+
+    return Math.floor(Math.random() * ((max - min) + 1));
+
+}
+
+console.log( 'user input: ',inputNumber, ' machine rand: ', machineNumber(1, 5),);
+
+winner(inputNumber, machineNumber(1, 5));
