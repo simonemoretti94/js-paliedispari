@@ -12,7 +12,7 @@ function palindrome (word) {
                 console.log('word index: ',i, ' ',word[i], 'is the same as word index: ', n, ' ', word[n]);
             }
             else {
-                alert('The number you wrote isn\'t palindrome!');
+                alert('The word you wrote isn\'t palindrome!');
                 break;
             }
         } 
