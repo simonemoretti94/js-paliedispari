@@ -31,8 +31,29 @@ palindrome(chosenWord);
 
 //Even && Odd
 
+let evenOrOdd;
+let inputNumber;
+
+const machineNumber  = function machineRandNumber(min, max) {
+    console.log((max - min) + 1);
+
+    console.log(Math.random());
+
+    console.log(Math.random() * ((max - min) + 1));
+    
+    evenOrOdd = prompt("plese write below lowercase 'even' or 'odd'"); //using inside the function
+
+    inputNumber = Number(prompt('Then, please write below a number 1 <= n <= 5'));
+    
+    return Math.floor(Math.random() * ((max - min) + min));
+
+}
 
 function winner (input1, input2) {
+    
+    
+    console.log( 'user input: ',inputNumber, ' machine rand: ', machine_number_output);
+    
     const sum = input1 + input2;
 
     if (sum % 2 === 0 && evenOrOdd === 'even') {
@@ -44,31 +65,12 @@ function winner (input1, input2) {
     else if (sum % 2 !== 0 && evenOrOdd === 'even') {
         console.log(sum, 'is odd, you choosed even. Game over!');
     }
-    // else if (sum % 2 === 0 || sum % 2 !== 0 && evenOrOdd !== 'even' || evenOrOdd !== 'odd') {
-    //     console.log('Something went wrong. Exit');
-    // }
     else {
         console.log(sum, 'is even, User wins!');
     }
 }
 
-const evenOrOdd = prompt("plese write below lowercase 'even' or 'odd'"); //using inside the function
-
-const inputNumber = Number(prompt('Then, please write below a number 1 <= n <= 5'));
-
-const machineNumber  = function machineRandNumber(min, max) {
-    console.log((max - min) + 1);
-
-    console.log(Math.random());
-
-    console.log(Math.random() * ((max - min) + 1));
-
-    return Math.floor(Math.random() * ((max - min) + min));
-
-}
-
 const machine_number_output = machineNumber(1, 5) 
 
-console.log( 'user input: ',inputNumber, ' machine rand: ', machine_number_output);
-
 winner(inputNumber, machine_number_output);
+
