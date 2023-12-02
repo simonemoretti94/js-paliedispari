@@ -44,9 +44,9 @@ function winner (input1, input2) {
     else if (sum % 2 !== 0 && evenOrOdd === 'even') {
         console.log(sum, 'is odd, you choosed even. Game over!');
     }
-    else if (sum % 2 === 0 || sum % 2 !== 0 && evenOrOdd !== 'even' || evenOrOdd !== 'odd') {
-        console.log('Something went wrong. Exit');
-    }
+    // else if (sum % 2 === 0 || sum % 2 !== 0 && evenOrOdd !== 'even' || evenOrOdd !== 'odd') {
+    //     console.log('Something went wrong. Exit');
+    // }
     else {
         console.log(sum, 'is even, User wins!');
     }
