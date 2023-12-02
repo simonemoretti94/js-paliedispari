@@ -13,7 +13,7 @@ function palindrome (word) {
             }
             else {
                 alert('The word you wrote isn\'t palindrome!');
-                break;
+                break; //writing false instead of break
             }
         } 
     }
@@ -52,7 +52,7 @@ function winner (input1, input2) {
     }
 }
 
-const evenOrOdd = prompt("plese write below lowercase 'even' or 'odd'");
+const evenOrOdd = prompt("plese write below lowercase 'even' or 'odd'"); //using inside the function
 
 const inputNumber = Number(prompt('Then, please write below a number 1 <= n <= 5'));
 
@@ -63,7 +63,7 @@ const machineNumber  = function machineRandNumber(min, max) {
 
     console.log(Math.random() * ((max - min) + 1));
 
-    return Math.floor(Math.random() * ((max - min) + 1));
+    return Math.floor(Math.random() * ((max - min) + min));
 
 }
 
