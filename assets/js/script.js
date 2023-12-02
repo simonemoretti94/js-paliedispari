@@ -57,16 +57,18 @@ const evenOrOdd = prompt("plese write below lowercase 'even' or 'odd'");
 const inputNumber = Number(prompt('Then, please write below a number 1 <= n <= 5'));
 
 const machineNumber  = function machineRandNumber(min, max) {
-    // console.log((max - min) + 1);
+    console.log((max - min) + 1);
 
-    // console.log(Math.random());
+    console.log(Math.random());
 
-    // console.log(Math.random() * ((max - min) + 1));
+    console.log(Math.random() * ((max - min) + 1));
 
     return Math.floor(Math.random() * ((max - min) + 1));
 
 }
 
-console.log( 'user input: ',inputNumber, ' machine rand: ', machineNumber(1, 5),);
+const machine_number_output = machineNumber(1, 5) 
 
-winner(inputNumber, machineNumber(1, 5));
+console.log( 'user input: ',inputNumber, ' machine rand: ', machine_number_output);
+
+winner(inputNumber, machine_number_output);
