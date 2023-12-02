@@ -2,6 +2,7 @@
 
 //Palindrome number
 
+let check;
 
 function palindrome (word) {
     
@@ -10,15 +11,19 @@ function palindrome (word) {
         for(let i = 0; i < word.length, n >= 0; i++, n--){
             if (word[i] === word[n]) {
                 console.log('word index: ',i, ' ',word[i], 'is the same as word index: ', n, ' ', word[n]);
+                check = true;
             }
             else {
-                alert('The word you wrote isn\'t palindrome!');
-                break; //writing false instead of break
+                check = false;
             }
         } 
     }
     else {
         console.log('You wrote a number!');
+    }
+    
+    if (check === false) {
+        alert('The word you wrote isn\'t palindrome!');
     }
 }
 
